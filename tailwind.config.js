@@ -8,6 +8,9 @@ module.exports = {
       },
       screens: {
         'xs':'300px',
+      }, 
+      minHeight: {
+        '1': '66vh',
       }
     },
   },
