@@ -15,6 +15,9 @@ input{
     color: #555;
     background: #ebfffc;
 }
+input::placeholder{
+  font-size: 15px;
+}
 .weather{
   transition: all 0.5s;
 }
