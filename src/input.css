@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.card {
+  background: rgb(27, 27, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(27, 27, 27, 1) 0%,
+    rgba(0, 189, 255, 1) 0%,
+    rgba(0, 227, 228, 1) 48%,
+    rgba(0, 117, 255, 1) 100%
+  );
+}
+input{
+    color: #555;
+    background: #ebfffc;
+}
+.weather{
+  transition: all 0.5s;
+}
+
+
+
+.spinner-container {
+  margin-top: 50px;
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust height as needed */
+}
+
+.spinner {
+  border: 5px solid #f3f3f3; /* Light grey border */
+  border-top: 5px solid rgba(0, 117, 255, 1); /* Blue border on top for spinner effect */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
